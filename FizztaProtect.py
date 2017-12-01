@@ -93,16 +93,6 @@ My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]
 -==============-"""
 
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
-DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF3=[cl,ki,kc,ks,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF4=[cl,ki,kk,ks,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF5=[cl,ki,kk,kc,ka,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF6=[cl,ki,kk,kc,ks,kb,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF7=[cl,ki,kk,kc,ks,ka,ko,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF8=[cl,ki,kk,kc,ks,ka,kb,ke,ku] #Udah Ga Kepake(Boleh di apus)
-DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] #Udah Ga Kepake(Boleh di apus)
-DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] #Udah Ga Kepake(Boleh di apus)
 mid = cl.getProfile().mid #Najenda
 Amid = ki.getProfile().mid #Tatsumi
 Bmid = kk.getProfile().mid #Bulat
@@ -167,7 +157,6 @@ Idline: http://line.me/ti/p/~jhon26__""",
     "wblacklist":False,
     "dblacklist":False,
     "Protectgr":True,
-    #"Protectjoin":True, # Ga Kepake(Yang Gabung langsung di kick :D) Udah  Udah ada Protect Cancell
     "Protectcancl":True,
     "protectionOn":True,
     "atjointicket":True
