@@ -5,6 +5,10 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
+satpam = LINETCR.LINE() # Fizzta # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
+satpam.login(qr=True)
+satpam.loginResult()
+
 cl = LINETCR.LINE() #Najenda
 cl.login(qr=True)
 cl.loginResult()
@@ -44,10 +48,6 @@ ke.loginResult()
 ku = LINETCR.LINE() #Susanoo
 ku.login(qr=True)
 ku.loginResult()
-
-satpam = LINETCR.LINE() # Fizzta # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
-satpam.login(qr=True)
-satpam.loginResult()
 
 k1 = LINETCR.LINE() #Back Up (Gunanya Kalo Akun Utama Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Akun Utama Dan Akun Utama Di undang sama dia,lalu dy leave lagi :D)
 k1.login(qr=True)
