@@ -172,6 +172,14 @@ wait2 = {
 setTime = {}
 setTime = wait2['setTime']
 
+import time
+
+mulai = time.time()
+
+def waktu(secs):
+  mins,secs = divmod(secs,60)
+  hours,mins = divmod(mins,60)
+  return '%02d Jam %02d Menit %02d Detik' %(hours,mins,secs)
 
 def sendMessage(to, text, contentMetadata={}, contentType=0):
     mes = Message()
@@ -1305,6 +1313,10 @@ def bot(op):
                     ko.updateProfile(profile)
                     cl.sendText(msg.to,"Bio berubah menjadi " + string + "")
     #--------------=Finish=----------------
+            elif msg.text.lower() == 'runtime':
+		 eltime = time.time() - mulai
+		 van = "Bot sudah berjalan selama" +waktu(eltime)
+		 cl.sendText(msg.to,van)
     #--------------= SC Ganti nama Owner=--------------
             elif "Myname:" in msg.text:
               if msg.from_ in owner:
@@ -1478,7 +1490,7 @@ def bot(op):
                         ki.sendText(msg.to,"Can not be used outside the group")
                     else:
                         ki.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["Sanji open qr","Sanji buka qr"]:
+            elif msg.text in ["Akame open qr","Akame buka qr"]:
                 if msg.toType == 2:
                     X = kc.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -2287,7 +2299,7 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Kuy","One piece","Join kuy"]:
+            elif msg.text in ["Phewwit","Night ride","Pasukan"]:
               if msg.from_ in owner:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2411,7 +2423,7 @@ def bot(op):
     #----------------------Fungsi Join Group Finish---------------#
 
     #-------------Fungsi Leave Group Start---------------#
-            elif msg.text in ["Bye op","Kabur all","Kaboor all"]:
+            elif msg.text in ["Hushus","Bye","Kabur"]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -2869,7 +2881,7 @@ def bot(op):
 #-----------------------------------------------
 
        #-------------Fungsi Respon Start---------------------#
-            elif msg.text in ["Absen","Absen bot","Absen dulu","Respon"]:
+            elif msg.text in ["Absen","Respon"]:
               if msg.from_ in admin:
                 cl.sendText(msg.to,"⭐⭐⭐")
                 ki.sendText(msg.to,"⭐⭐⭐⭐")
@@ -2919,9 +2931,7 @@ def bot(op):
             elif msg.text in ["Creator"]:
               msg.contentType = 13
               msg.contentMetadata = {'mid': 'ua35835da9375cdfc874eaa9b279997da'}
-              cl.sendText(msg.to,"======================")
               cl.sendMessage(msg)
-              cl.sendText(msg.to,"======================")
               cl.sendText(msg.to,"Itu Creator Kami  Yang Manis😜")
                 
       #-------------Fungsi Chat ----------------
