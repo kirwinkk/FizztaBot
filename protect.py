@@ -2883,16 +2883,16 @@ def bot(op):
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Absen","Respon"]:
               if msg.from_ in admin:
-                cl.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 1]")
-                ki.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 2]")
-                kk.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 3]")
-                kc.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 4]")
-                ks.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 5]")
-                ka.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 6]")
-                kb.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 7]")
-                ko.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 8]")
-                ke.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 9]")
-                ku.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 10]")
+                cl.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 1]")
+                ki.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 2]")
+                kk.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 3]")
+                kc.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 4]")
+                ks.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 5]")
+                ka.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 6]")
+                kb.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 7]")
+                ko.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 8]")
+                ke.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 9]")
+                ku.sendText(msg.to,"𝔫𝔦𝔤𝔥𝔱 𝔯𝔞𝔦𝔡 [𝔟𝔬𝔱 10]")
                 cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Nganu")
       #-------------Fungsi Respon Finish---------------------#
                             
