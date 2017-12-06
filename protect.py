@@ -2883,16 +2883,16 @@ def bot(op):
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Absen","Respon"]:
               if msg.from_ in admin:
-                cl.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 1]")
-                ki.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 2]")
-                kk.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 3]")
-                kc.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 4]")
-                ks.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 5]")
-                ka.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 6]")
-                kb.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 7]")
-                ko.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 8]")
-                ke.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 9]")
-                ku.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 10]")
+                cl.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 1]")
+                ki.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 2]")
+                kk.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 3]")
+                kc.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 4]")
+                ks.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 5]")
+                ka.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 6]")
+                kb.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 7]")
+                ko.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 8]")
+                ke.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 9]")
+                ku.sendText(msg.to,"ɴɪɢʜᴛ ʀᴀɪᴅ [BOT 10]")
                 cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Nganu")
       #-------------Fungsi Respon Finish---------------------#
                             
