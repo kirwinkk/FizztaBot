@@ -5,10 +5,6 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
-satpam = LINETCR.LINE() # Fizzta # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
-satpam.login(qr=True)
-satpam.loginResult()
-
 cl = LINETCR.LINE() #Najenda
 cl.login(qr=True)
 cl.loginResult()
@@ -49,11 +45,15 @@ ku = LINETCR.LINE() #Susanoo
 ku.login(qr=True)
 ku.loginResult()
 
+satpam = LINETCR.LINE() # Fizzta # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
+satpam.login(qr=True)
+satpam.loginResult()
+
 k1 = LINETCR.LINE() #Back Up (Gunanya Kalo Akun Utama Ke Kick, Dy masuk ke Group dan Ngekick yang Kick Akun Utama Dan Akun Utama Di undang sama dia,lalu dy leave lagi :D)
 k1.login(qr=True)
 k1.loginResult()
 
-print "login success plak"
+print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -141,16 +141,16 @@ Idline: http://line.me/ti/p/~jhon26__""",
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"™ɴᴀᴊᴇɴᴅᴀ™",
-    "cName2":"™ᴛᴀᴛsᴜᴍɪ™",
-    "cName3":"™ʙᴜʟᴀᴛ™",
-    "cName4":"™ᴀᴋᴀᴍᴇ™",
-    "cName5":"™ʟᴜʙʙᴏᴄᴋ™",
-    "cName6":"™sʜᴇᴇʟᴇ™",
-    "cName7":"™ᴍɪɴᴇ™",
-    "cName8":"™ʟᴇᴏɴᴇ™",
-    "cName9":"™ᴄʜᴇʟsᴇᴀ™",
-    "cName10":"™sᴜsᴀɴᴏᴏ™",
+    "cName":"ɴᴀᴊᴇɴᴅᴀ",
+    "cName2":"ᴛᴀᴛsᴜᴍɪ",
+    "cName3":"ʙᴜʟᴀᴛ",
+    "cName4":"ᴀᴋᴀᴍᴇ",
+    "cName5":"ʟᴜʙʙᴏᴄᴋ",
+    "cName6":"sʜᴇᴇʟᴇ",
+    "cName7":"ᴍɪɴᴇ",
+    "cName8":"ʟᴇᴏɴᴇ",
+    "cName9":"ᴄʜᴇʟsᴇᴀ",
+    "cName10":"sᴜsᴀɴᴏᴏ",
     "cName11":"",
     "cName12":"™ɴ̷̣̎ɪ̶̚͜ɢ̶̤̄ʜ̶̟́ᴛ̵̩̍ ̶̬͠ʀ̴̲͘ᴀ̸̮̃ɪ̸͙͂ᴅ̴͙́ ̶̲͌ᴛ̷̖̇ᴇ̷͖͘ᴀ̵̆ͅᴍ̴͇̈́™",
     "blacklist":{},
@@ -2883,17 +2883,17 @@ def bot(op):
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Absen","Respon"]:
               if msg.from_ in admin:
-                cl.sendText(msg.to,"⭐⭐⭐")
-                ki.sendText(msg.to,"⭐⭐⭐⭐")
-                kk.sendText(msg.to,"⭐⭐⭐⭐⭐")
-                kc.sendText(msg.to,"⭐⭐⭐⭐⭐⭐")
-                ks.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐")
-                ka.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐⭐")
-                kb.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐⭐⭐")
-                ko.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
-                ke.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
-                ku.sendText(msg.to,"⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐")
-                cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Anu")
+                cl.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 1]")
+                ki.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 2]")
+                kk.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 3]")
+                kc.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 4]")
+                ks.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 5]")
+                ka.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 6]")
+                kb.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 7]")
+                ko.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 8]")
+                ke.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 9]")
+                ku.sendText(msg.to,"🇳🇮🇬🇭🇹 🇷🇦🇮🇩 [🇧🇴🇹 10]")
+                cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Nganu")
       #-------------Fungsi Respon Finish---------------------#
                             
 
