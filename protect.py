@@ -58,14 +58,15 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" [ɴ̷̣̎ɪ̶̚͜ɢ̶̤̄ʜ̶̟́ᴛ̵̩̍ ̶̬͠ʀ̴̲͘ᴀ̸̮̃ɪ̸͙͂ᴅ̴͙́ ̶̲͌ᴛ̷̖̇ᴇ̷͖͘ᴀ̵̆ͅᴍ̴͇̈́]
-My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]
+My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]"""
 -==================-
 ◄]·♦·Menu For Public·♦·[►
 [•]Info Group
 [•]Welcome
 [•]Creator
-[•]Bot
-◄]·♦·Menu For Admin·♦·[►
+[•]Bot"""
+
+"""setgrup=◄]·♦·Menu For Admin·♦·[►
 -==================-
 [•]Cancel 
 [•]「Buka/Tutup」qr 
@@ -75,10 +76,11 @@ My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]
 [•]Status/Set
 [•]Gurl
 [•]Jam「On/Off」
-[•]Tag all/Tagall 
+[•]Tagall 
 [•]Absen/Respon
-[•]Banlist 
->>[Perintah Proteksi]<< 
+[•]Banlist""" 
+
+""">>[Perintah Proteksi]<< 
 👑Hanya Untuk Owner👑
 -==================-
 [•]Allbio: <text> [Change All Status Bot]
@@ -405,11 +407,11 @@ def bot(op):
               G.preventJoinByTicket = False
               random.choice(KAC).updateGroup(G)
               Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
-              satpam.acceptGroupInvitationByTicket(op.param1,Ticket)
+              k1.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
               G.preventJoinByTicket = True
               random.choice(KAC).updateGroup(G)
-              satpam.updateGroup(G)
+              k1.updateGroup(G)
               wait["blacklist"][op.param2] = True
                                 
             if op.param3 in mid:
@@ -1070,7 +1072,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["help","Help"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
@@ -1148,7 +1150,7 @@ def bot(op):
     #--------------- SC Add Admin ---------
             elif "Admin @" in msg.text:
               if msg.from_ in owner:
-                print "[Command]Staff add executing"
+                print "[Command]Admin add executing"
                 _name = msg.text.replace("Admin @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
@@ -1175,14 +1177,14 @@ def bot(op):
                             cl.sendText(msg.to,"Succes~")
                         except:
                             pass
-                print "[Command]Staff add executed"
+                print "[Command]Admin add executed"
               else:
                 cl.sendText(msg.to,"Command denied.")
                 cl.sendText(msg.to,"Admin permission required.")
                 
             elif "Unadmin @" in msg.text:
               if msg.from_ in owner:
-                print "[Command]Staff remove executing"
+                print "[Command]Admin remove executing"
                 _name = msg.text.replace("Unadmin @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
@@ -1209,7 +1211,7 @@ def bot(op):
                             cl.sendText(msg.to,"Delete Succes~")
                         except:
                             pass
-                print "[Command]Staff remove executed"
+                print "[Command]Admin remove executed"
               else:
                 cl.sendText(msg.to,"Command denied.")
                 cl.sendText(msg.to,"Admin permission required.")
@@ -1223,7 +1225,7 @@ def bot(op):
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
-                  print "[Command]Stafflist executed"
+                  print "[Command]Adminlist executed"
     #--------------------------------------
     #-------------- Add Friends ------------
             elif "Bot Add @" in msg.text:
