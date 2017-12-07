@@ -58,7 +58,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage =""" [ɴ̷̣̎ɪ̶̚͜ɢ̶̤̄ʜ̶̟́ᴛ̵̩̍ ̶̬͠ʀ̴̲͘ᴀ̸̮̃ɪ̸͙͂ᴅ̴͙́ ̶̲͌ᴛ̷̖̇ᴇ̷͖͘ᴀ̵̆ͅᴍ̴͇̈́]
-My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]"""
+My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]
 -==================-
 ◄]·♦·Menu For Public·♦·[►
 [•]Info Group
@@ -66,7 +66,7 @@ My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]"""
 [•]Creator
 [•]Bot"""
 
-"""setgrup=◄]·♦·Menu For Admin·♦·[►
+setgrup="""◄]·♦·Menu For Admin·♦·[►
 -==================-
 [•]Cancel 
 [•]「Buka/Tutup」qr 
@@ -77,8 +77,7 @@ My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]"""
 [•]Gurl
 [•]Jam「On/Off」
 [•]Tagall 
-[•]Absen/Respon
-[•]Banlist""" 
+[•]Absen/Respon""" 
 
 """>>[Perintah Proteksi]<< 
 👑Hanya Untuk Owner👑
@@ -90,6 +89,7 @@ My Owner : [ᴊ̸̝̄ʜ̸̲͘ᴏ̷̰̇ɴ̶͙́]"""
 [•]Adminlist [Melihat Daftar Admin]
 [•]Ban @ [By Tag]
 [•]Unban @ [By Tag]
+[•]Restart [Merestart Bot]
 -==============-
 ɴ̷̣̎ɪ̶̚͜ɢ̶̤̄ʜ̶̟́ᴛ̵̩̍ ̶̬͠ʀ̴̲͘ᴀ̸̮̃ɪ̸͙͂ᴅ̴͙́ ̶̲͌ᴛ̷̖̇ᴇ̷͖͘ᴀ̵̆ͅᴍ̴͇̈́
 -==============-"""
@@ -1226,7 +1226,14 @@ def bot(op):
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
                   print "[Command]Adminlist executed"
-    #--------------------------------------
+    #--------------- Restart -----------------------
+            elif msg.text in ["Restart"]:
+		 cl.sendText(msg.to,"Succes Restarted")
+		 restart_program()
+		 print "@Restart"
+	    def restart_program():
+		python = sys.executable
+		os.execl(python,python,*sys.argv)
     #-------------- Add Friends ------------
             elif "Bot Add @" in msg.text:
               if msg.toType == 2:
