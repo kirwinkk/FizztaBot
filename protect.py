@@ -2628,7 +2628,7 @@ def bot(op):
                 cl.updateGroup(gs)
                 invsend = 0
                 Ticket = cl.reissueGroupTicket(msg.to)
-                satpam.acceptGroupInvitationByTicket(msg.to,Ticket)
+                k1.acceptGroupInvitationByTicket(msg.to,Ticket)
                 time.sleep(0.01)
                 targets = []
                 for s in gs.members:
@@ -2643,7 +2643,7 @@ def bot(op):
                         satpam.kickoutFromGroup(msg.to,[target])
                         print (msg.to,[g.mid])
                       except:
-                        satpam.leaveGroup(msg.to)
+                        k1.leaveGroup(msg.to)
                         gs = cl.getGroup(msg.to)
                         gs.preventJoinByTicket = True
                         cl.updateGroup(gs)
