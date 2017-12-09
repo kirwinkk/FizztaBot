@@ -1231,9 +1231,6 @@ def bot(op):
 		 cl.sendText(msg.to,"Succes Restarted")
 		 restart_program()
 		 print "@Restart"
-	    def restart_program():
-		python = sys.executable
-		os.execl(python,python,*sys.argv)
     #-------------- Add Friends ------------
             elif "Bot Add @" in msg.text:
               if msg.toType == 2:
@@ -3075,7 +3072,10 @@ def bot(op):
 
     except Exception as error:
         print error
-
+	
+def restart_program():
+    python = sys.executable
+    os.execl(python,python,*sys.argv)
 
 def a2():
     now2 = datetime.now()
