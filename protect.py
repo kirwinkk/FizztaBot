@@ -5,6 +5,7 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
+
 satpam = LINETCR.LINE() # Fizzta # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
 satpam.login(qr=True)
 satpam.loginResult()
