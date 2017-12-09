@@ -46,7 +46,11 @@ class LINE:
     self.token = self.channel.token
     self.obs_token = self.channel.obs_token
     self.refresh_token = self.channel.refresh_token
-
+    self._headers = {
+              'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0',
+              'X-Line-Access': self.authToken,
+              'User-Agent': 'Line/6.0.0 iPad4,1 9.0.2'
+               }
 
   """User"""
 
